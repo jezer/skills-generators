@@ -1,0 +1,5 @@
+interface:
+  display_name: "Manter Automacoes"
+  short_description: "Cria automacoes parametrizadas"
+  default_prompt: "Use $maintain-automations para transformar atividades repetitivas em scripts ou templates parametrizados."
+
