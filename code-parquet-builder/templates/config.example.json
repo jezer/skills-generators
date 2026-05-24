@@ -1,0 +1,21 @@
+{
+  "versao": "v1.0",
+  "base_python": "C:/caminho/para/raiz/dos/fontes",
+  "output_dir": "C:/caminho/para/output",
+  "tabela": "tb_meu_codigo",
+  "filtros": ["lib_minha_framework"],
+  "fontes": [
+    {"arquivo": "modulos/util.py", "modulo": "util", "ordem_base": 1},
+    {"arquivo": "modulos/core.py", "modulo": "core", "ordem_base": 2}
+  ],
+  "init_blocos": [
+    {
+      "ordem": 1000,
+      "modulo": "init",
+      "tipo": "init",
+      "nome": "criar_app",
+      "descricao": "Bloco literal final que instancia o app",
+      "codigo": "App = AppClass()"
+    }
+  ]
+}

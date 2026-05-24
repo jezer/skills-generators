@@ -1,0 +1,17 @@
+name: code-parquet-builder
+description: >-
+  Gera parquet+csv ordenado a partir de blocos AST de arquivos Python listados
+  em um JSON de configuracao. Use quando precisar transformar fontes .py em
+  artefato de tabela Delta carregavel via exec() no Databricks, com filtragem
+  automatica de imports relativos e de pacotes internos.
+when_to_use:
+  - converter fontes Python em parquet de blocos ordenados
+  - centralizar geradores ad-hoc duplicados em multiplos projetos
+  - aplicar filtros de imports antes de persistir codigo em tabela Delta
+how_to_use:
+  - criar config.json (ver templates/config.example.json)
+  - rodar scripts/build-code-parquet.ps1 -Config caminho.json [-Versao vX.Y]
+limites:
+  - nao faz upload do parquet
+  - nao executa codigo dos fontes
+  - nao decide ordem entre modulos (confia em ordem_base)
